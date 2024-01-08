@@ -79,3 +79,14 @@ echo -e "${Cyan}Hw OP is not present, cloning Vendor${NC}"
 git clone https://github.com/Badr98-t/android_hardware_oplus--realme.git hardware/oplus
 fi
 
+echo ""
+
+# DeviceExtras
+if [[ -d "packages/apps/DeviceExtras" ]]; then
+echo -e "${BIGreen}Hw oplus folder is present${NC}"
+echo ""
+else
+echo -e "${Cyan}Hw OP is not present, cloning Vendor${NC}"
+git clone https://github.com/Badr98-t/packages_apps_DeviceExtras packages/apps/DeviceExtras
+fi
+
