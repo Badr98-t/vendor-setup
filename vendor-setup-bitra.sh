@@ -21,7 +21,7 @@ echo -e "${BIGreen}Dt Present${NC}"
 echo ""
 else
 echo -e "${Cyan}Dt  not present, cloning Device tree${NC}"
-git clone https://github.com/Badr98-t/device_realme_bitra -b rising  device/realme/bitra
+git clone https://github.com/Badr98-t/device_realme_bitra  device/realme/bitra
 fi
 
 echo ""
@@ -32,7 +32,7 @@ echo -e "${BIGreen}Common Present${NC}"
 echo ""
 else
 echo -e "${Cyan}Common tree is not present, cloning Device tree${NC}"
-git clone https://github.com/Badr98-t/device-realme-sm8250 device/realme/sm8250-common
+git clone https://github.com/Badr98-t/device-realme-sm8250  device/realme/sm8250-common
 fi
 
 echo ""
@@ -54,7 +54,7 @@ echo -e "${BIGreen}Vendor present${NC}"
 echo ""
 else
 echo -e "${Cyan}Vendor is not present, cloning Vendor${NC}"
-git clone https://github.com/Badr98-t/vendor-realme-sm8250 vendor/realme/sm8250-common
+git clone https://github.com/Badr98-t/vendor_realme_sm8250  vendor/realme/sm8250-common
 fi
 
 echo ""
@@ -65,7 +65,7 @@ echo -e "${BIGreen}Vendor present${NC}"
 echo ""
 else
 echo -e "${Cyan}Vendor is not present, cloning Vendor${NC}"
-git clone https://github.com/Badr98-t/vendor_realme_bitra vendor/realme/bitra
+git clone https://github.com/Badr98-t/vendor_realme_bitra  vendor/realme/bitra
 fi
 
 echo ""
@@ -90,3 +90,12 @@ echo -e "${Cyan}Hw OP is not present, cloning Vendor${NC}"
 git clone https://github.com/Badr98-t/packages_apps_DeviceExtras packages/apps/DeviceExtras
 fi
 
+echo ""
+# oplus camera 
+if [[ -d "vendor/oplus/camera" ]]; then 
+echo -e "${BIGreen}Hw oplus folder is present${NC}"
+echo ""
+else
+echo -e "${Cyan}Hw OP is not present, cloning Vendor${NC}"
+git clone https://gitlab.com/pjgowtham/proprietary_vendor_oplus_camera -b lineage-21 vendor/oplus/camera
+fi
