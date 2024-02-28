@@ -21,7 +21,7 @@ echo -e "${BIGreen}Dt Present${NC}"
 echo ""
 else
 echo -e "${Cyan}Dt  not present, cloning Device tree${NC}"
-git clone https://github.com/Badr98-t/device_realme_bitra  device/realme/bitra
+git clone https://github.com/Badr98-t/device-realme-bitra-private -b suoerior  device/realme/bitra
 fi
 
 echo ""
